@@ -20,27 +20,26 @@
 
 9. L'elemento _title_ contiene il titolo della pagina che verrà visualizzato nel broswer.
 
-10. Per collegare un file CSS esterno alla pagina HTML basta richiamarlo nell'header del documento HTML attraverso il tag **link** in questo modo:
-<link rel="stylesheet" type="text/css" href="style.css">.
+10. Per collegare un file CSS esterno alla pagina HTML basta richiamarlo nell'header del documento HTML attraverso il tag **link**.
 
 11. Uno script JavaSricpt si può collegare a un documento HTML come file esterno utilizzando il tag _script_ con all'interno il nome del file.
 
-12. Tutti gli elementi di blocco sono di tipo contenitore (cioè hanno un tag di chiusura e uno di apertura), ne sono un esempio gli elementi <div>. Un elemento a blocco inizia sempre su una nuova riga e i browser aggiungono automaticamente uno spazio (un margine) prima e dopo l’elemento.
-    Un elemento inline non inizia su una nuova riga, come ad esempio l’elemento <span>, utilizzato per marcare una parte di testo o una parte di un documento.
+12. Tutti gli elementi di blocco sono di tipo contenitore (cioè hanno un tag di chiusura e uno di apertura), ne sono un esempio gli elementi **_div_**. Un elemento a blocco inizia sempre su una nuova riga e i browser aggiungono automaticamente uno spazio (un margine) prima e dopo l’elemento.
+    Un elemento inline non inizia su una nuova riga.
 
-13. I collegamenti ipertestuali si creano con la coppia di tag <a> </a>. La “a” sta per ancora, e fa riferimento al fatto che il link deve fornire un ancoraggio tra più pagine/elementi.Il link consente di navigare da una pagina all'altra o da un sito all'altro, senza utilizzare la tastiera del computer. Un link può linkare qualsiasi risorsa nell'indirizzo di destinazione ( es. altre pagine web, immagini, documenti, ecc. ).
+13. I collegamenti ipertestuali si creano con il tag **_a_**. La “a” sta per ancora, e fa riferimento al fatto che il link deve fornire un ancoraggio tra più pagine/elementi.Il link consente di navigare da una pagina all'altra o da un sito all'altro, senza utilizzare la tastiera del computer. Un link può linkare qualsiasi risorsa nell'indirizzo di destinazione ( es. altre pagine web, immagini, documenti, ecc. ).
 
 14. Gli attributi HTML memorizzano informazioni aggiuntive in un tag HTML. Esempio di attributi sono: **id**, che identifica in modo univoco un elemento HTML; **class** si usa per assegnare un elemento a una o più classi; **style** definisce lo stile di un elemento HTML e può quindi impostare il colore, il font o la dimensione del carattere.
 
 15. Possiamo inserire immagini nel documento HTML utilizzando il tag **img** seguito dall'attribuito **src** che specifica qual'è il percorso dell'immagine.
 
-16. Il tag alt delle immagini è il cosiddetto testo alternativo per un'immagine. Serve a descrivere un'immagine o ciò che essa rappresenta. Il tag alt delle immagini o attributo alt è il cosiddetto testo alternativo per un'immagine. Serve a descrivere un'immagine o ciò che essa rappresenta. Nasce per dare la possibilità agli utenti ipovedenti di utilizzare il lettore dello schermo durante la navigazione.
+16. Il tag **_alt_** delle immagini è il cosiddetto testo alternativo per un'immagine. Serve a descrivere un'immagine o ciò che essa rappresenta. Il tag alt delle immagini o attributo alt è il cosiddetto testo alternativo per un'immagine. Serve a descrivere un'immagine o ciò che essa rappresenta. Nasce per dare la possibilità agli utenti ipovedenti di utilizzare il lettore dello schermo durante la navigazione.
 
-17. Le liste HTML più utilizzate sono di due tipologie: la lista ordinata ( <ol> ) e la lista non ordinata ( <ul> ). Le singole voci delle liste sono espresse con il tag <li> (list item) e rappresentano il contenuto degli elementi <ol> o <ul>.
+17. Le liste HTML più utilizzate sono di due tipologie: la lista ordinata ( **_ol_** ) e la lista non ordinata ( **_ul_** ). Le singole voci delle liste sono espresse con il tag **_li_** (list item).
 
-18. Il tag <div></div> può contenere paragrafi, immagini, titoli, ecc.; può contenere, dunque, qualsiasi tipo di elemento HTML. L'utilizzo appropriato consente una chiara separazione e organizzazione dei contenuti. Importante: il tag div ha comportamento bloccante.
-    Il tag <span></span> contrassegna una parte di testo o, in genere, di documento, a cui vogliamo dare una caratteristica particolare, magari utilizzando un linguaggio di stile come il CSS. Il tag <span> non cambia la struttura o il flusso del documento.
-    In sintesi, la differenza principale tra il tag <div> e il tag <span> riguarda la loro natura bloccante o di linea e il loro utilizzo. Il tag <div> viene utilizzato per creare sezioni o divisioni di contenuto all'interno di una pagina, mentre il tag <span> viene utilizzato per applicare stili o manipolare parti specifiche di testo o altri elementi. Entrambi gli elementi sono fondamentali nella creazione di layout e nell'applicazione di stili in HTML, ma vengono utilizzati in contesti diversi a seconda delle esigenze specifiche del progetto.
+18. Il tag **_div_** può contenere paragrafi, immagini, titoli, ecc.; può contenere, dunque, qualsiasi tipo di elemento HTML. L'utilizzo appropriato consente una chiara separazione e organizzazione dei contenuti. Importante: il tag div ha comportamento bloccante.
+    Il tag **_span_** contrassegna una parte di testo o, in genere, di documento, a cui vogliamo dare una caratteristica particolare, magari utilizzando un linguaggio di stile come il CSS. Il tag _span_ non cambia la struttura o il flusso del documento.
+    In sintesi, la differenza principale tra i due tag riguarda la loro natura bloccante o di linea e il loro utilizzo. Entrambi gli elementi sono fondamentali nella creazione di layout e nell'applicazione di stili in HTML, ma vengono utilizzati in contesti diversi a seconda delle esigenze specifiche del progetto.
 
 19. Il tag **_iframe_** consente di incorporare implicitamente contenuti aggiuntivi in un documento HTML. Si utilizza soprattutto per integrare oggetti di altri siti web nella propria pagina online, ad esempio, video di YouTube o Google Maps, plug-in dei social media o altre applicazioni specifiche.
     Perché il frame sia eseguito correttamente, vanno specificati i seguenti attributi:

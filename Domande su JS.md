@@ -103,3 +103,40 @@ let valori = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];.
     **D** tutto ciò che non è cifra.
 
 22. Il costrutto **_try...catch_** per prima cosa esegue il codice all’interno del blocco _try {...}_. Se non si verifica alcun errore, allora _catch(err)_ viene ignorato; se si verifica un errore, allora l’esecuzione del resto del codice all’interno del try viene interrotta, e si passa all’esecuzione del codice all’interno di catch(err).
+
+23. Le promise introducono per certi versi la programmazione asincrona. Le promise sono state concepite per rappresentare operazioni incomplete in un preciso momento a runtime, che saranno però complete in futuro. Si tratta di un componente adottato nel caso di elaborazioni asincrone. Gli stati del promise sono tre:
+
+- Resolved: quando il valore che rappresenta diviene disponibile, cioè quando restituisce il valore.
+- Rejected: quando l'attività asincrona associata non restituisce un valore.
+- Pending: quando non è né risolta né rigettata, cioè la richiesta di esecuzione di un'attività asincrona è partita ma non abbiamo ancora ricevuto un risultato.
+  La sintassi della promise è questa:
+  _var promise = new Promise(handler);_
+  Il promise handler agisce su due canali, prendendo due funzioni come argomenti.
+  Il primo parametro corrisponde alla funzione da chiamare quando il valore restituito dall'operazione asincrona è disponibile. Il valore restituito dall’attività asincrona viene passato alla funzione in questione.
+  Il secondo corrisponde alla funzione da invocare quando la promise non può essere risolta, ad esempio se si è verificato un errore o se il valore restituito non è considerato valido.
+  Quindi avremo:
+  var promise = new Promise(function(resolve, reject) {
+
+if (statement) {
+resolve(value);
+} else {
+reject(reason);
+}
+});
+
+24. Per come è progettato, JavaScript è un linguaggio di programmazione sincrono. Ciò significa che quando il codice viene eseguito, JavaScript inizia dalla parte superiore del file ed esegue il codice riga per riga, fino al completamento.
+    In termini tecnici, viene definita a filo unico, ovvero **_single-threaded_**.
+    Tutte le operazioni, dall'elaborazione dell'input dell'utente alla visualizzazione del risultato sulla pagina web, sono affidate a questo singolo thread, che scandisce i tempi. L’esecuzione è, quindi, detta sincrona.
+    Per molti impieghi, la sincronia non è un buon modo di eseguire il software. Per questo motivo, si utilizza la programmazione asincrona: alcune funzioni vengono gestite al di fuori del single thread, in modo da evitare blocchi o altri problemi.
+    Sono esempi di funzioni asincrone **setTimeout()** o **fetch()**.
+
+25. Async/Await è un modo di scrivere promesse che ci consente di scrivere codice asincrono in modo sincrono. Per utilizzare async/await dobbiamo anteporre async alla funzione. Questo non la rende una funzione asincrona, ma ci permette semplicemente di usare await al suo interno.
+
+26. In JavaScript, la parola chiave this ci consente di:
+
+- Riutilizzare funzioni in diversi contesti di esecuzione. Vale a dire che una funzione, una volta definita, può essere chiamata per oggetti diversi usando la parola chiave this.
+- Identificare l'oggetto nel contesto di esecuzione corrente quando chiamiamo un metodo.
+
+27. L’ereditarietà rappresenta un meccanismo che consente di definire delle classi figlie che ereditano dalle classi padre tutti gli attributi. Si definisce "classe figlia" quella che eredita tutte o parte delle proprietà e dei metodi definiti nella classe padre. In questo modo, si viene a formare una gerarchia. La "classe figlio" riutilizza tutti i campi e i metodi della classe genitore.
+
+28. In JavaScript esistono molte operazioni per lavorare sugli elementi dell’array, dette **metodi**, che consentono di eseguire operazioni come l'aggiunta o la rimozione di elementi, la ricerca, la trasformazione e molto altro ancora. Tra questi, **_push(), pop(), shift(),_** e **_unshift()_** per aggiungere o rimuovere elementi dall'inizio o dalla fine dell'array JavaScript, oppure **_sort()_** e **_reverse()_** per ordinare gli elementi all'interno dell'array.
